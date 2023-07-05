@@ -1,6 +1,6 @@
 FROM ghcr.io/cynkra/rig-ubuntu:main
 
-RUN apt-get install -y flex bison libglpk-dev libgmp-dev
+RUN apt-get install -y flex bison libglpk-dev libgmp-dev libarpack2-dev
 
 RUN R -q -e 'pak::pak("igraph", dependencies = TRUE)'
 
