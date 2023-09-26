@@ -1,6 +1,6 @@
 FROM ghcr.io/cynkra/rig-ubuntu:main
 
-RUN apt-get install -y cmake flex bison libglpk-dev libgmp-dev libarpack2-dev
+RUN apt-get install -y cmake flex bison libglpk-dev libgmp-dev libarpack2-dev python3-venv
 
 RUN R -q -e 'pak::pak(c("igraph", "cpp11", "devtools"), dependencies = TRUE)'
 
